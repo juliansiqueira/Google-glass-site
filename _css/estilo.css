@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+/* fonte de cima e importada da web */
+@font-face {
+	font-family: 'FonteLogo'; /* cria uma classe para fonte */
+	src: url("../_fonts/bubblegum-sans-regular.otf"); /* fonte importada da pasta fontes */
+}
+
+body {
+	font-family: arial, sans-serif; /* fonte do site inteiro */
+	background-color: #dddddd; /* cor de fundo fora do site */
+	color: rgba(0,0,0,1); /* cor das letras */
+}
+
+div#interface { /* configuracao da interface da pagina */
+	width: 900px; /* tamanho da interface */
+	background-color:#ffffff; /* cor de fundo da pagina */
+	margin: -20px auto 0px auto; /* margem de fora da interface */
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5); /* sombra da interface */
+	padding: 10px; /* margem de dentro da interface */
+}
+p { /* configuracao dos paragrafos */
+	text-align: justify; /* justificados */
+	text-indent: 50px; /* espaco da identação */
+}
+
+a {
+	color: #606060; /* cor do link */
+	text-decoration: none; /* tirar o sublinhado */
+
+}
+
+a:hover { /* ao passar o mouse encima, o sublinhado aparece. . */
+	text-decoration: underline; 
+}
+
+header#cabecalho img#icone { /* configurar a img oculos */
+	position: absolute; /* para mover a img por qlq lugar do site */
+	left: 955px; /* mover para direita */
+	top: 80px; /* mover para cima */
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid; /* definir a borda, cor e tipo do cabecalho */
+	height: 150px; /* defini o local da borda */
+	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; 
+    /* define onde esta a logo da imagem "glass", faz ela nao se repetir, e especifica o local onde ela vai estar */
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif; /* puxa a classe da fonte */
+	font-size: 30pt; /* tamanho da fonte */
+	color: #606060; /* cor da fonte */
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6); /* sombra da fonte */
+	padding: 0px; /* tamanho interno da margem */
+	margin-bottom: 0px; /* tamanho externo da margem */ 
+}
+
+header#cabecalho h2 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #88888888;
+	font-size: 15pt;	
+	padding: 0px;
+	margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	display: inline-block;
+}
+
+figure.foto-legenda img{
+	width: 100%;	
+	height: 100%;
+}
+
+figure.foto-legenda figcaption{
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+	opacity: 1;
+}
+
+/* Formatacao do Menu */
+nav#menu {
+	display: block;
+}
+
+/* formatacao da lista */
+nav#menu ul{
+	list-style: none; /* tira a marcacao da lista, a 'bolinha' */
+	text-transform: uppercase; /* deixa todas letras maiusculas */
+	position: absolute; /* deixa voce mover o menu pra qualquer lugar do site */
+	top: -20px; /* diminui o espacamento do topo */
+	left: 450px; /* move o menu para direita */
+}
+/* cada retangulo do menu, é um li */
+nav#menu li {
+	display: inline-block; /* os blocos de menu seja exibido na mesma linha */
+	background-color: #dddddd; /* cor da box do menu */
+	padding: 10px; /* tamanho da box do menu */
+	margin: 2px; /* espaco entre as box do menu */
+	transition: background-color 1s; /* tempo de transicao quando passar o mouse encima para mudar de cor */
+}
+/* efeito de opacidade ao passar o mouse encima do menu */
+nav#menu li:hover {
+	background-color: #606060; /* cor cinza da transicao */
+}
+
+/* esconder 'menu principal' */
+nav#menu h1{
+	display: none;
+}
+
+/* para mudar a cor das letras do menu (links) e tirar o sublinhado (decoracao) */
+nav#menu a {
+	color: #000000;	
+	text-decoration: none;
+}
+
+nav#menu a:hover { /* para quando passar o mouse encima mudar a cor da letra */
+	color: #ffffff; /* cor branca */
+	text-decoration: underline; /* para aparecer o sublinhado ao passar o mouse encima */
+}
+
+section#corpo { /* seção da esquerda */
+	display: block; /* para mostrar em bloco */
+	width: 500px; /* tamanho do bloco */
+	float: left; /* 'float' e para ficar flutuando na pagina */
+	border-right: 1px solid #606060; /* criar margem no meio */
+	padding-right: 18px; /* espacamento do texto para borda */
+}
+
+article#noticia-principal h2 { /* modifica as boxes dos titulos, letras , ect */
+	font-size: 12pt; /* tamanho da fonte */
+	color: #606060; /* cor da fonte */
+	background-color: #dddddd; /* cor de fundo da box */
+	padding: 5px 0px 5px 10px; /* margen interior 'move titulo na box' */
+	margin: 10px 0px 10px 0px; /* margen exterior aumeta a box */
+}
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+
+.direita {
+	text-align: right;
+}
+
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #778888;
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+	font-size: 12px;
+	color: #606060;
+}
+
+table#tabelaspec { /* configuracao da tabela inteira */
+	border: 1px solid #606060; /* modificar borda, cor e tipo */
+	border-spacing: 0px; /* espacamento entre as cedulas */
+	margin-left: auto; /* espacamento da esquerda fora da tabela 'externo' */
+	margin-right: auto;
+}
+
+table#tabelaspec td { /* configuracao de cada item dentro da tabela */
+	border: 1px solid #606060; /* borda de cada item dentro da tabela */
+	padding: 10px; /* espacamento interno de cada item da tabela */
+	text-align: center; /* mover os nomes para esquerda ou direita */
+	vertical-align: middle; /* over os nomes para cima ou para baixo */
+}
+
+table#tabelaspec td.ce { /* configuracao celulas esquerda */
+	color: #ffffff; /* cor da letra */
+	background-color: #606060; /* cor de fundo */
+	vertical-align:; /* alinhamento, sobrepoe o da 'td' acima */
+	font-weight: bolder; /* fonte em negrito */
+}
+
+table#tabelaspec td.cd { /* configuracao celulas direita */
+	background-color: #cecece; /* cor de fundo */
+
+}
+
+table#tabelaspec caption {
+	color: #778888;
+	font-size: 14pt;
+	font-weight: bolder;
+
+}
+
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: #000000 ;
+	font-size: 7pt;
+	margin-top: 12px;
+
+}
+
+aside#lateral { /* seção da direita */
+	display: block; /* layout fica em forma de bloco */
+	width: 350px; /* tamanho do bloco de texto */
+	float: right; /* para mover o texto para qualquer lugar */
+	background-color: #dddddd; /* cor de fundo da 'aside' */
+	padding: 10px; /* espaço interno */
+	margin-top: 10px; /* margem do top */
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5) /* tamanho da sombra e cor */
+}
+
+
+aside#lateral h1 { /* titulo 'outras noticias' */
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060; /* cor da fonte */
+	margin-top: 0px; /* margem do top */
+}
+
+aside#lateral h2 { /* modificacao dentro do titulo */
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px; /* espacamento dentro da letra para o bloco em si */
+}
+
+footer#rodape { /* seção do rodape */
+	clear: both; /* serve para alinhar tudo que estiver acima dele */
+	border-top: 1px solid #606060; /* para criar uma borda acima do rodape */
+}
+
+footer#rodape p {
+	text-align: center; /* para alinhar o rodape */
+}
+
+div#index {
+	display: block;
+	position: relative;
+	
+
+}
+
+video#video2 {
+	display: block;
+	position: relative;
+	width: 350px;
+	padding-left: -10px;
+}
