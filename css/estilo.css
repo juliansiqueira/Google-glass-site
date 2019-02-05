@@ -44,7 +44,7 @@ header#cabecalho img#icone { /* configurar a img oculos */
 header#cabecalho {
 	border-bottom: 1px #606060 solid; /* definir a borda, cor e tipo do cabecalho */
 	height: 150px; /* defini o local da borda */
-	background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px; 
+	background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 80px; 
     /* define onde esta a logo da imagem "glass", faz ela nao se repetir, e especifica o local onde ela vai estar */
 }
 
